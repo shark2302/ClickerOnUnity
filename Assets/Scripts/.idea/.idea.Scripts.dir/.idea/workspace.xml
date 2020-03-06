@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5466add2-7e0c-4320-aea5-b8b0a3d13d3c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/AsteroidKiller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Scaler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spawner.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Spawner.cs" />
+        <option value="$PROJECT_DIR$/asdasd.cs" />
+        <option value="$PROJECT_DIR$/AddScore.cs" />
+        <option value="$PROJECT_DIR$/Scaler.cs" />
+        <option value="$PROJECT_DIR$/AsteroidKiller.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Yi2LnLE8FXPWFHSIRFo3VsYTNN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="Console" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5466add2-7e0c-4320-aea5-b8b0a3d13d3c" name="Default Changelist" comment="" />
+      <created>1583411041304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583411041304</updated>
+      <workItem from="1583411045528" duration="716000" />
+      <workItem from="1583412737411" duration="381000" />
+      <workItem from="1583413236284" duration="149000" />
+      <workItem from="1583413484513" duration="146000" />
+      <workItem from="1583413739718" duration="596000" />
+      <workItem from="1583414452332" duration="35000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="221" y="52" key="SettingsEditor" timestamp="1583414219409">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="52" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583414219409" />
+    <state x="221" y="70" key="SettingsEditor/0.23.1440.816@0.23.1440.816" timestamp="1583413931723" />
+  </component>
+</project>
