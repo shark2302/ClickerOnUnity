@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class AddScore : MonoBehaviour
 {
-    [SerializeField]
+    
     private static int scoreValue;
-
-    Text score;
-    // Start is called before the first frame update
+    [SerializeField]
+    private Text score;
+    
     void Start()
     {
         score = GetComponent<Text>();
