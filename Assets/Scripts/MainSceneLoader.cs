@@ -9,7 +9,7 @@ public class MainSceneLoader : MonoBehaviour
    
     public void LoadGame()
     {
-        AddScore.scoreValue = 0;
+        AddScore.ResetScore();
         SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
 

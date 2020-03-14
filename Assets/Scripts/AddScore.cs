@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class AddScore : MonoBehaviour
 {
-    public static int scoreValue;
+    [SerializeField]
+    private static int scoreValue;
 
     Text score;
     // Start is called before the first frame update
@@ -18,5 +19,20 @@ public class AddScore : MonoBehaviour
     void Update()
     {
         score.text = scoreValue.ToString();
+    }
+
+    public static int GetScore()
+    {
+        return scoreValue;
+    }
+
+    public static void InctementScore()
+    {
+        scoreValue++;
+    }
+
+    public static void ResetScore()
+    {
+        scoreValue = 0;
     }
 }

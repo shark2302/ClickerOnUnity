@@ -11,7 +11,7 @@ public class AsteroidKiller : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            AddScore.scoreValue += 1;
+            AddScore.InctementScore();
             Destroy(gameObject);
         }
     }

@@ -11,7 +11,7 @@ public class GetScore : MonoBehaviour
     private void Start()
     {
         _resScore = GetComponent<Text>();
-        _resScore.text = "Ваш результат - " + AddScore.scoreValue;
+        _resScore.text = "Ваш результат - " + AddScore.GetScore();
     }
 
 
