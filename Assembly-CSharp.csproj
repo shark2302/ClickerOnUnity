@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AddScore.cs" />
-     <Compile Include="Assets\Scripts\AnimationController.cs" />
      <Compile Include="Assets\Scripts\AsteroidKiller.cs" />
      <Compile Include="Assets\Scripts\GetScore.cs" />
      <Compile Include="Assets\Scripts\MainSceneLoader.cs" />
