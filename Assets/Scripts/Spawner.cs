@@ -5,15 +5,12 @@ using System.Collections;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Spawner : MonoBehaviour
 {
-    [Header("Object creation")]
-
+    [Header("Object creation")] 
+    public GameObject prefabToSpawn; 
     
-    public GameObject prefabToSpawn;
-
     [Header("Other options")]
-
     public float spawnInterval = 1;
-
+    
     private BoxCollider2D boxCollider2D;
 
     void Start ()
