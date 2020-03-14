@@ -8,11 +8,8 @@ public class AsteroidKiller : MonoBehaviour
 {
     
     private void OnMouseDown()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
+    { 
             AddScore.InctementScore();
             Destroy(gameObject);
         }
-    }
 }
