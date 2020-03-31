@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Scaler : MonoBehaviour
 {
-    private Animation _animation;
+    private Animator _animator;
 
     private void Start()
     {
-        _animation = GetComponent<Animation>();
+        _animator = GetComponent<Animator>();
     }
 
 
@@ -18,7 +18,7 @@ public class Scaler : MonoBehaviour
     {
         if (gameObject.transform.localScale.x > 1.3)
         {
-            _animation.Play();
+            _animator.SetTrigger("DangerTrigger");
         }
         
         if (gameObject.transform.localScale.x > 1.5)

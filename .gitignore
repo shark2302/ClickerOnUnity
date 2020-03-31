@@ -4,3 +4,5 @@ obj/
 Logs/
 */.idea/
 /.idea
+Assembly-CSharp.csproj
+Clicker.sln
