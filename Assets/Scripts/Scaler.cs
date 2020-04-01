@@ -20,7 +20,6 @@ public class Scaler : MonoBehaviour
     {
         if (gameObject.transform.localScale.x > 1.3)
         {
-           
             _animator.SetTrigger("DangerTrigger");
         }
         

@@ -12,7 +12,9 @@ public class GetScore : MonoBehaviour
     private void Start()
     {
         _resScore = GetComponent<Text>();
-        _resScore.text = "Ваш результат - " + AddScore.GetScore();
+        _resScore.text = "Ваш результат - " + AddScore.GetScore() + "\n" 
+                         + "Лучший результат - " + PlayerPrefs.GetInt("HighScore").ToString();
+        
     }
 
 

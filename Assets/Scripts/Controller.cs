@@ -17,14 +17,16 @@ public class Controller : MonoBehaviour
 
     public void LoadGame()
     {
+        if (PlayerPrefs.GetInt("HighScore") < AddScore.GetScore())
+        {
+            PlayerPrefs.SetInt("HighScore", AddScore.GetScore());
+        }
         AddScore.ResetScore();
         _hud.gameObject.SetActive(true);
         gameObject.SetActive(false);
         _game.SetActive(true);
         _spawner.gameObject.SetActive(true);
         _endGame.gameObject.SetActive(false);
-        
-        //SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
 
     public void LoadEndGameView()

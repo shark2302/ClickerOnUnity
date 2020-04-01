@@ -12,10 +12,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private Text _uiText;
     private float _timer;
     private bool _started = false;
-    
-    
 
-   
     void Update()
     {
         if(!_started)
@@ -24,7 +21,6 @@ public class GameController : MonoBehaviour
         {
             _timer -= Time.deltaTime;
             _uiText.text = _timer.ToString("F");
-            
         }
         else if (_timer <= 0)
         {
@@ -35,10 +31,7 @@ public class GameController : MonoBehaviour
             foreach (var clone in clones)
             {
                 Destroy(clone);
-                Debug.Log("Destr");
             }
-            
-
             _started = false;
         }
         
