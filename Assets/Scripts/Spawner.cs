@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
     
     private BoxCollider2D boxCollider2D;
 
-    void Start ()
+    void OnEnable ()
     {
         boxCollider2D = GetComponent<BoxCollider2D>();
 

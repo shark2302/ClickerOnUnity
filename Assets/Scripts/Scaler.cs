@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class Scaler : MonoBehaviour
 {
     private Animator _animator;
+    [SerializeField]
+   
 
     private void Start()
     {
@@ -18,12 +20,13 @@ public class Scaler : MonoBehaviour
     {
         if (gameObject.transform.localScale.x > 1.3)
         {
+           
             _animator.SetTrigger("DangerTrigger");
         }
         
-        if (gameObject.transform.localScale.x > 1.5)
+        if (gameObject.transform.localScale.x > 1.8)
         {
-            SceneManager.LoadScene("RestartScene", LoadSceneMode.Single);
+            AddScore.DecrementScore();
             Destroy(gameObject);
             
         }
