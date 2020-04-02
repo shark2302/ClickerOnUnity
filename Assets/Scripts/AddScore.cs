@@ -39,5 +39,9 @@ public class AddScore : MonoBehaviour
     public static void DecrementScore()
     {
         scoreValue -= 5;
+        if (scoreValue < 0)
+        {
+            scoreValue = 0;
+        }
     }
 }
