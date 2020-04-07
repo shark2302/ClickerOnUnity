@@ -37,7 +37,7 @@ public class GameController : MonoBehaviour
             Invoke("LoadEndGameView", 0.5f);
             
         }
-        
+       
     }
 
     private void OnEnable()

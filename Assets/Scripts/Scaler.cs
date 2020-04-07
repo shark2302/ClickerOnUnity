@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Scaler : MonoBehaviour
 {
-    private Animator _animator;
     [SerializeField]
+    private Animator _animator;
+    
    
 
     private void Start()
@@ -32,8 +33,5 @@ public class Scaler : MonoBehaviour
         gameObject.transform.localScale *= 1.001f;
     }
 
-    private void OnDestroy()
-    {
-        _animator.SetTrigger("Death");
-    }
+  
 }
