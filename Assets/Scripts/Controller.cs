@@ -9,8 +9,7 @@ using UnityEngine.UIElements;
 public class Controller : MonoBehaviour
 {
 
-    [SerializeField] private Canvas _hud;
-    [SerializeField] private Spawner _spawner;
+    [SerializeField] private Canvas _hud; 
     [SerializeField] private Canvas _endGame;
     [SerializeField] private GameObject _game;
     
@@ -22,19 +21,17 @@ public class Controller : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", AddScore.GetScore());
         }
         AddScore.ResetScore();
-        _hud.gameObject.SetActive(true);
+        _hud?.gameObject.SetActive(true);
         gameObject.SetActive(false);
-        _game.SetActive(true);
-        _spawner.gameObject.SetActive(true);
-        _endGame.gameObject.SetActive(false);
+        _game?.SetActive(true);
+        _endGame?.gameObject.SetActive(false);
     }
 
     public void LoadEndGameView()
     {
-        _hud.gameObject.SetActive(false);
-        _game.SetActive(false);
-        _spawner.gameObject.SetActive(false);
-        _endGame.gameObject.SetActive(true);
+        _hud?.gameObject.SetActive(false);
+        _game?.SetActive(false);
+        _endGame?.gameObject.SetActive(true);
     }
     
     

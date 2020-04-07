@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private Controller _controller;
     [SerializeField] private float _mainTimer = 60;
     [SerializeField] private Text _uiText;
+    [SerializeField] private GameObject _spawner;
     private float _timer;
     private bool _started = false;
 
@@ -26,13 +27,15 @@ public class GameController : MonoBehaviour
         {
             _timer = 0.0f;
             _uiText.text = _timer.ToString("F");
-            _controller.LoadEndGameView(); 
+            _spawner?.SetActive(false);
             var clones = GameObject.FindGameObjectsWithTag ("Clone");
             foreach (var clone in clones)
             {
                 Destroy(clone);
             }
             _started = false;
+            Invoke("LoadEndGameView", 0.5f);
+            
         }
         
     }
@@ -41,5 +44,11 @@ public class GameController : MonoBehaviour
     {
         _timer = _mainTimer;
         _started = true;
+        _spawner?.SetActive(true);
+    }
+
+    private void LoadEndGameView()
+    {
+        _controller?.LoadEndGameView();
     }
 }

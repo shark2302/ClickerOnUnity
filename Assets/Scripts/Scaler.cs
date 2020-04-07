@@ -31,5 +31,9 @@ public class Scaler : MonoBehaviour
         }
         gameObject.transform.localScale *= 1.001f;
     }
-    
+
+    private void OnDestroy()
+    {
+        _animator.SetTrigger("Death");
+    }
 }

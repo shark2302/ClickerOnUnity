@@ -11,5 +11,6 @@ public class AsteroidKiller : MonoBehaviour
     { 
             AddScore.InctementScore();
             Destroy(gameObject);
-        }
+    }
+    
 }
