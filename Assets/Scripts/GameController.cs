@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class GameController : MonoBehaviour
 {
@@ -37,7 +38,8 @@ public class GameController : MonoBehaviour
             Invoke("LoadEndGameView", 0.5f);
             
         }
-       
+     
+    
     }
 
     private void OnEnable()
@@ -51,4 +53,6 @@ public class GameController : MonoBehaviour
     {
         _controller?.LoadEndGameView();
     }
+
+    
 }

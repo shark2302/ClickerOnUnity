@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class Scaler : MonoBehaviour
@@ -9,14 +10,6 @@ public class Scaler : MonoBehaviour
     [SerializeField]
     private Animator _animator;
     
-   
-
-    private void Start()
-    {
-        _animator = GetComponent<Animator>();
-    }
-
-
     void Update()
     {
         if (gameObject.transform.localScale.x > 1.3)
@@ -33,5 +26,6 @@ public class Scaler : MonoBehaviour
         gameObject.transform.localScale *= 1.001f;
     }
 
-  
+
+   
 }
