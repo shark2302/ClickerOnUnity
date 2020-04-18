@@ -28,12 +28,7 @@ public class GameController : MonoBehaviour
         {
             _timer = 0.0f;
             _uiText.text = _timer.ToString("F");
-            _spawner?.SetActive(false);
-            var clones = GameObject.FindGameObjectsWithTag ("Clone");
-            foreach (var clone in clones)
-            {
-                Destroy(clone);
-            }
+           
             _started = false;
             //Invoke("LoadEndGameView", 0.5f);
             StartCoroutine(EndGameCoroutine());
@@ -42,6 +37,14 @@ public class GameController : MonoBehaviour
 
     IEnumerator EndGameCoroutine()
     {
+        _spawner?.SetActive(false);
+       /* var clones = _spawner.GetAsteroidList();
+        foreach (var clone in clones)
+        {
+            if (clone != null) ;
+            Destroy(clone);
+        }
+        */
         yield return new WaitForSeconds(0.5f);
         LoadEndGameView();
        

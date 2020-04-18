@@ -1,5 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using Random = UnityEngine.Random;
 
 
 [RequireComponent(typeof(BoxCollider2D))]
@@ -12,12 +15,30 @@ public class Spawner : MonoBehaviour
     public float spawnInterval = 1;
     
     private BoxCollider2D boxCollider2D;
+    private List<GameObject> _asteroidList;
 
     void OnEnable ()
     {
+       _asteroidList = new List<GameObject>();
         boxCollider2D = GetComponent<BoxCollider2D>();
 
         StartCoroutine(SpawnObject());
+    }
+
+    private void OnDisable()
+    {
+        foreach (var asteroid in _asteroidList)
+        {
+            if(asteroid != null) 
+                Destroy(asteroid);
+        }
+
+       
+    }
+
+    public List<GameObject> GetAsteroidList()
+    {
+        return _asteroidList;
     }
 	
     
@@ -32,9 +53,13 @@ public class Spawner : MonoBehaviour
             
             GameObject newObject = Instantiate<GameObject>(prefabToSpawn);
             newObject.transform.position = new Vector2(randomX + this.transform.position.x, randomY + this.transform.position.y);
-
+            _asteroidList.Add(newObject);
             
             yield return new WaitForSeconds(spawnInterval);
         }
     }
+    
+    
+
+    
 }
