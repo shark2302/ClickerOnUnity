@@ -35,13 +35,17 @@ public class GameController : MonoBehaviour
                 Destroy(clone);
             }
             _started = false;
-            Invoke("LoadEndGameView", 0.5f);
-            
+            //Invoke("LoadEndGameView", 0.5f);
+            StartCoroutine(EndGameCoroutine());
         }
-     
-    
     }
 
+    IEnumerator EndGameCoroutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+        LoadEndGameView();
+       
+    }
     private void OnEnable()
     {
         _timer = _mainTimer;
