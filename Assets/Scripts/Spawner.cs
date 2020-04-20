@@ -32,8 +32,7 @@ public class Spawner : MonoBehaviour
             if(asteroid != null) 
                 Destroy(asteroid);
         }
-
-       
+        _asteroidList.Clear();
     }
 
     public List<GameObject> GetAsteroidList()
